@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modules</title>
+</head>
+<body>
+    <h2>What are Modules?</h2>
+    <h3>Modules in JS:</h3>
+    <p1>In JavaScript, modules are a way to organize code into reusable files or components, helping to encapsulate functionality, prevent variable and function name clashes, and improve code maintainability. Prior to the introduction of modules, JavaScript lacked a built-in module system, leading to global scope pollution and code organization challenges.</p1>
+    
+    <h3>Exporting from a Module:</h3>
+    <p1>To make variables, functions, or objects available for use in other files, you can use the export keyword.
+        <br>
+        Example (in math.js):
+    </p1><br>
+    <br>
+<p1>    export const add = (a, b) => a + b;
+    export const subtract = (a, b) => a - b;    
+</p1><br><br>
+
+
+    <h3>Importing into a Module:</h3>
+    <p1>To use functionalities from another module, you use the import keyword.
+           <br>
+        Example (in app.js):
+    </p1><br>
+    <br>
+<p1>    import { add, subtract } from './math.js';
+    
+    console.log(add(5, 3));      
+    console.log(subtract(8, 3)); 
+      
+</p1><br><br>
+
+    <h3>Default Export:</h3>
+    <p1>You can also have a default export in a module.
+        <br>
+        Example (in config.js):
+    </p1><br>
+    <br>
+<p1>const apiUrl = 'https://api.example.com';
+
+    export default apiUrl;    
+
+    import apiUrl from './config.js';
+
+console.log(apiUrl);
+</p1><br><br>
+
+<h2>What are the benefits of Modules?</h2>
+<h3>Benefits of Modules:</h3>
+<p1><b>Encapsulation: </b> allow you to encapsulate code and only expose what is necessary, reducing global scope pollution.
+    <br>
+    <b>Organization:</b> Code is organized into separate files, making it easier to manage and maintain.
+    <br>
+    <b>Reusability:</b> Modules can be reused across different parts of an application or in different projects.
+    <br>
+    <b>Dependency Management:</b> Modules can have dependencies on other modules, making it clear which pieces of code rely on others.</p1>
+</body>
+</html>

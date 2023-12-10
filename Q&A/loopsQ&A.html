@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <h2>What are loops?</h2>
+    <h3>for loop:</h3>
+    <p1>The for loop is used when you know in advance how many times you want to iterate. It consists of three parts: initialization, condition, and iteration statement.
+      </p1><br>
+      <br>
+<p1>for (let i = 0; i < 5; i++) {
+    console.log(i);
+  }
+  </p1><br><br>
+    <h3>while loop:</h3>
+    <p1>The while loop repeats a block of code as long as a specified condition is true.
+      </p1><br>
+      <br>
+<p1>let i = 0;
+    while (i < 5) {
+      console.log(i);
+      i++;
+    }
+    
+  </p1><br><br>
+    <h3>do-while loop:</h3>
+    <p1>Similar to the while loop, the do-while loop executes a block of code at least once, and then it repeats as long as a specified condition is true.
+      </p1><br>
+      <br>
+<p1>let i = 0;
+    do {
+      console.log(i);
+      i++;
+    } while (i < 5);   
+  </p1><br><br>
+    <h3>for-each loop:</h3>
+    <p1>In JavaScript, the forEach loop is a method for iterating over elements in an array. It provides a more concise and readable way to iterate through each element compared to traditional for loops. The forEach method is available on arrays and takes a callback function as its argument. This callback function is executed once for each element in the array.
+      <br><br>
+<p1>const array = [1, 2, 3, 4, 5];
+
+    array.forEach(function(element) {
+      // code to be executed for each element
+      console.log(element);
+    });
+    
+  </p1><br><br>
+  
+  <h2>What is an arrow function?</h2>
+  <h3>Arrow Function:</h3>
+  <p1>Arrow functions in JavaScript provide a concise syntax for writing anonymous functions, with implicit return for single expressions, and lexically bind the this keyword.
+    <br><br>
+<p1>array.forEach((element, index, array) => {
+    console.log(`Element at index ${index}: ${element}`);
+  });
+
+</p1><br><br>
+
+<h2>What is map function in js?</h2>
+<h3>Map Function:</h3>
+<p1>In JavaScript, the map function is an array method that creates a new array by applying a provided function to each element of the original array. It doesn't mutate the original array. The result is an array with the same length, where each element corresponds to the result of the applied function on the original element.</p1>
+<br><br>
+<p1>const newArray = originalArray.map((currentValue, index, array) => {
+    // return result based on currentValue, index, or array
+  });
+  
+
+</p1><br><br>
+</body>
+</html>
